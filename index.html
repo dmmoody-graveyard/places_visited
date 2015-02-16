@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Oh the places you've been</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Oh the places you've been!</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a new place you have been:</h2>
+
+          <form id="new-place">
+            <div class="form-group">
+              <label for="spot">spot</label>
+              <input type="text" class="form-control" id="spot">
+            </div>
+            <div class="form-group">
+              <label for="season">Season</label>
+              <input type="text" class="form-control" id="season">
+            </div>
+            <div class="form-group">
+              <label for="notes">Notes</label>
+              <input type="text" class="form-control" id="notes">
+            </div>
+
+            <button type="submit" class="btn btn-default">Add Place</button>
+          </form>
+
+          <h2>Places:</h2>
+            <ul id="places">
+            </ul>
+
+        </div>
+
+        <div class="col-md-6">
+          <div id="show-place">
+            <h2></h2>
+
+            <p>Spot: <span class="spot"></span></p>
+            <p>Season: <span class="season"></span></p>
+            <p>Notes: <span class="notes"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
